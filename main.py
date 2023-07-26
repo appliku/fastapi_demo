@@ -46,7 +46,7 @@ def create_message(message: MessageIn):
     return db_message
 
 
-@app.get("/healthcheck/", response_model=HTMLResponse)
+@app.get("/healthcheck/", response_model=str)
 def healthcheck():
     return "<html><body><h1>OK</h1></body></html>"
 
