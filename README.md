@@ -9,9 +9,11 @@ Add a Postgres Database to your project through dashboard.
 ### Send a message
 Run this curl command to send a message:
 
+Replace the URL with the URL of your application.
+
 ```shell
 curl --request POST \
-  --url https://fastmsg.applikuapp.com/messages/ \
+  --url https://fastapidemo.applikuapp.com/messages/ \
   --header 'Content-Type: application/json' \
   --data '{
 	"name" : "john Snow",
