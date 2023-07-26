@@ -48,7 +48,7 @@ def create_message(message: MessageIn):
 
 @app.get("/healthcheck/", response_model=str)
 def healthcheck():
-    return "<html><body><h1>OK</h1></body></html>"
+    return "OK"
 
 
 if __name__ == "__main__":
