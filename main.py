@@ -52,5 +52,9 @@ def healthcheck():
 
 
 if __name__ == "__main__":
-    port = os.environ.get("PORT", 5000)
+    try:
+        port = os.environ.get("PORT", "5000")
+        port = int(port)
+    except ValueError:
+        port = 5000
     uvicorn.run("main:app", port=port, log_level="info")
