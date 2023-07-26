@@ -24,7 +24,7 @@ curl --request POST \
 
 ### Check messages
 
-Connect to the databas using credentials from Appliku dashboard.
+Connect to the database using credentials from Appliku dashboard.
 
 ```shell 
 psql postgresql://<username>:<password>@<host>:<port>/<database>
