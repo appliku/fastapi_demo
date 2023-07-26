@@ -37,7 +37,7 @@ class MessageIn(BaseModel):
 
 @app.post("/messages/", response_model=MessageIn)
 def create_message(message: MessageIn):
-    db_message = Message(**message.dict())
+    db_message = Message(**message.model_dump())
     db = SessionLocal()
     db.add(db_message)
     db.commit()
