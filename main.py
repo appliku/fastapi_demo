@@ -10,7 +10,6 @@ from starlette.responses import HTMLResponse
 
 app = FastAPI()
 
-# Replace 'your_postgres_url' with your actual PostgreSQL URL
 DATABASE_URL = os.environ['DATABASE_URL']
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
